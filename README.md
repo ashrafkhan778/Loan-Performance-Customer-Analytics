@@ -1,40 +1,56 @@
-# Loan-Performance-Customer-Analytics
-# Loan Performance & Bank Database
+# Loan Performance & Customer Analytics
 
 ## Overview
-This repository contains a SQL database and an analytical report related to loan performance and customer analytics.
+This repository contains Power BI reports for Loan Performance & Customer Analytics, providing insights into loan approvals, customer credit scores, repayment trends, and loan status distribution.
 
-## Files Included:
-- `bankdb.sql`: This file contains the schema and data of a banking database, which includes customer information, loan applications, approvals, and repayment details.
-- `Loan Performance & Customer Analytics.pdf`: This document provides insights into loan performance, customer credit scores, approval rates, and trends using Power BI.
+## Files Included
+- `bankdb.sql`: SQL script for setting up the banking database.
+- `Loan Performance & Customer Analytics.pdf`: Report summarizing key loan analytics.
+- `an Prediction.pbix`: Power BI dashboard for interactive analysis.
 
-## Features:
-- **Customer Analytics**: Age distribution, credit score analysis, and top/bottom customer segmentation.
-- **Loan Performance**: Loan approval rates, loan amount distribution, and repayment trends.
-- **Risk Assessment**: Identification of high-risk customers based on credit scores.
-- **Loan Type Analysis**: Default rates and loan performance breakdown by loan type (home, car, personal loans).
+## Features
+- Customer demographics & credit score insights.
+- Loan approval & rejection trends.
+- Loan amount distribution by type and gender.
+- Monthly repayment analysis.
 
-## How to Use:
-1. **Database Setup**:
-   - Import `bankdb.sql` into your MySQL/PostgreSQL database.
-   - Use SQL queries to analyze loan and customer data.
+## How to Use
+1. **Import SQL Database**
+   - Load `bankdb.sql` into MySQL using:
+     ```sh
+     mysql -u your_username -p your_database_name < bankdb.sql
+     ```
+2. **Open Power BI Report**
+   - Use Power BI Desktop to open `an Prediction.pbix` and explore insights.
 
-2. **Report Analysis**:
-   - Open `Loan Performance & Customer Analytics.pdf` to review visual insights on loan trends and risks.
-
-## Prerequisites:
-- MySQL/PostgreSQL for running the SQL database.
-- Power BI or a PDF viewer for accessing the analytics report.
-
-## Future Improvements:
-- Integration with a web-based dashboard for real-time analytics.
-- Machine learning-based risk assessment for loan approvals.
+## Contribution
+Feel free to contribute by enhancing the reports or database. Fork the repository and submit a pull request.
 
 ## License
-This project is open-source and available for use under the MIT License.
+This project is open-source and free to use.
 
----
+Based on the provided Power BI report and data, here are some key insights into Loan Performance & Customer Analytics:
 
-### Contributors
-- **[Your Name]**  
+1. Loan Approval & Rejection Trends
+Approval Rate: 60% of loan applications were approved.
+Rejection Rate: 11.43% of applications were rejected.
+Pending Applications: 28.57% of applications are still in review.
+2. Loan Amount Distribution by Loan Type
+Home Loans account for the largest share of loan amounts.
+Car Loans and Personal Loans have smaller distributions but still significant.
+3. Credit Score Analysis
+Customers with Credit Scores 700-800 are more likely to get approved.
+High-risk customers (Credit Score <600) face a higher rejection rate.
+4. Customer Demographics
+Most loan applicants fall in the 26-45 age group.
+Male applicants receive more loans than female applicants, but approval rates are similar.
+5. Loan Default Rates
+Personal Loans have the highest default rate compared to other loan types.
+Car Loans also show some risk, but Home Loans tend to have lower default rates.
+6. Loan Repayments Over Time
+Monthly repayment trends show spikes in specific months, possibly due to seasonal factors or promotional offers.
+
+
+## Author
+Maintained by [Ashradf Ahmad Khan]
 
